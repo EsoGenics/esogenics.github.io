@@ -1,1 +1,1 @@
-const x = () => alert();
+const x = () => alert('Demo');
