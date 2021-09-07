@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    margin: 20px;
+    padding: 0;
+}
+header{
+    font-weight: normal;
+    font-size: 50px;
+}
+header p{
+    font-size: 16px;
+}
+p a{
+    color: aquamarine;
+    text-decoration: none;
+}
+h1,h2,h3,p{
+    color: white;
+    font-family: Verdana;
+}
+.content{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+section{}
+section main{}
+section main article{}
+
+article h2{
+    font-weight: 300;
+}
+p{
+    color: grey;
+}
+footer{
+    text-align: right;
+}
