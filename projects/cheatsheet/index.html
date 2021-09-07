@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML & CSS Cheat Sheet</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#html_tables">HTML Tables</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <article id="intro">
+        <h1>HTML & CSS Cheat Sheet</h1>
+        <p>This page will go over the topics outlined in the menu above. The idea behind this page is to help users remember specific HTML tables and tags along with CSS selectors and the specificity that follows.</p>
+        <figure>
+          <img src="https://cdn.hackernoon.com/hn-images/1*_zvJNj9WX0rZvJFcv5EuKw.png" alt="HTML & CSS Cheat Sheet" />
+        </figure>
+      </article>
+      <article id="html_tables">
+        <h2>HTML Tables</h2>
+        <p>In this article we will go over what HTML tables are and how we put one together. This will provide you indepth knowledge and samples of code to help you visualize how to construct one.</p>
+        <p>So what are HTML tables? HTML tables are just like a spread sheet that you use with Microsoft Excel with the exception that they are used on a webpage and don't do the mathmatical calculations by default, you have to program that in. Tables allow web developers to create rows and columns that help arrange data into a view format.</p>
+        <h3>Creating the header</h3>
+        <p>Making an HTML table is pretty simple! You start with a simple <strong>&lt;table&gt;</strong> and close with <strong>&lt;/table&gt;</strong>. Just like a spread sheet you will need to have a header, column, and rows. Lets start with the header and see how to assemble one. When you create a header in a HTML table you start with <strong>&lt;thead&gt;</strong> and close with <strong>&lt;/thead&gt;</strong>. Now you add a row in-between the header which involoves <strong>&lt;tr&gt;</strong> and ends with <strong>&lt;/tr&gt;</strong>. Now that we have that, we'll add the table header columns and to do that we open with <strong>&lt;th&gt;</strong> and close with <strong>&lt;/th&gt;</strong>.</p>
+        <h3>Creating the body</h3>
+        <p> To create the body we follow the same set of instuction as before with making the header but there are some syntax differences. Westart with <strong>&lt;tbody&gt;</strong> and close with <strong>&lt;/tbody&gt;</strong>. Now you add a row in-between the header which involoves <strong>&lt;tr&gt;</strong> and ends with <strong>&lt;/tr&gt;</strong>. Now that we have that, we'll add the table data columns and to do that we open with <strong>&lt;td&gt;</strong> and close with <strong>&lt;/td&gt;</strong>.</p>        <h3>Creating the footer</h3>
+        <p> To create the table footer we follow the same set of instuction as did with the body and header but we have one syntax difference now. Westart with <strong>&lt;tfoot&gt;</strong> and close with <strong>&lt;/tfoot&gt;</strong>. Now you add a row in-between the header which involoves <strong>&lt;tr&gt;</strong> and ends with <strong>&lt;/tr&gt;</strong>. Now that we have that, we'll add the table data columns and to do that we open with <strong>&lt;td&gt;</strong> and close with <strong>&lt;/td&gt;</strong>.</p>
+        <p>Here is an example of what the code should look like</p>
+        <p class="code">
+          <code>
+            &lt;table&gt;<br>
+            &nbsp;&lt;thead&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;th&gt;Column 1&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;th&gt;Column 2&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;th&gt;Column 3&lt;/th&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&lt;/thead&gt;<br>
+            &nbsp;&lt;tbody&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;td&gt;Data column 1&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;td&gt;Data column 2&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;td&gt;Data column 3&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&lt;/tbody&gt;<br>
+            &nbsp;&lt;tfoot&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;td colspan="2"&gt;Footer column 1 and 2&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;td&gt;Footer column 3&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&lt;/tfoot&gt;<br>
+            &lt;/table&gt;<br>
+          </code>
+        <p>
+          <p>Here is a live sample output of our table from the above code</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Expected</th>
+                <th>Code</th>
+                <th>Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">Total</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+      </article>
+    </div>
+    <footer>
+      
+    </footer>
+  </body>
+</html>

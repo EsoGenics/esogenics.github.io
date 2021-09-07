@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu{
+    width: 100%;
+    background-color: grey;
+    padding: 2px 3px;
+  }
+  
+  .menu nav{
+    max-width: 900px;
+    margin: auto;
+  }
+  nav ul{
+    display: flex;
+  }
+  nav ul li{
+    margin: auto 5px;
+    padding: 3px 8px;
+    list-style-type: none;
+    border: solid thin rgba(0,0,0,.3);
+    border-radius: 5px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li:hover{
+    background-color: rgba(0,0,0,.6);
+  }
+  nav ul li:active{
+    background-color: rgba(255,255,255,.6);
+  }
+  nav ul li a:active{
+    color: rgba(0,0,0,.6);
+  }
+  .content{
+    max-width: 900px;
+    height: 100%;
+    width: 100%;
+    padding: 10px 0;
+    margin: auto;
+  }
+  .content article{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+  }
+  .content article h1{
+    text-align: center;
+    margin: 0;
+  }
+  .content article p{
+    text-align: center;
+    margin: 15px 12%;
+  }
+  .content article img{
+    height: 350px;
+  }
+  
+  .content #html_tables{
+    text-align: left;
+  }
+  .content #html_tables h2{
+    margin: 15px 12%;
+  }
+  .content #html_tables h3{
+    margin: 15px 12%;
+  }
+  .content #html_tables p{
+    text-align: left;
+  }
+  .content #html_tables .code{
+    background-color: rgba(0,0,0,.25);
+    padding: 5px 25px;
+    box-shadow: 0 0 8px black;
+    border-radius: 5px;
+    width: 350px;
+  
+  }
+  .content #html_tables .code code{
+    color: rgba(20,20,20,.95);
+    text-shadow: 0 1px rgb(0 0 0 / 25%);
+  }
+  .content #html_tables table{
+    margin: 15px 12%;
+    border: 1px solid black;
+  }
+  .content #html_tables table thead{}
+  .content #html_tables table thead tr{}
+  .content #html_tables table thead tr th{}
+  .content #html_tables table tbody{}
+  .content #html_tables table tbody tr{}
+  .content #html_tables table tbody tr td{}
+  .content #html_tables table tfoot{
+    border-top: 1px solid black;
+  }
+  .content #html_tables table tfoot tr{}
+  .content #html_tables table tfoot tr td{
+    text-align: right;
+    padding: 0 10px;
+  }
+  td, th{
+    border: solid thin;
+    padding: 8px;
+  }
